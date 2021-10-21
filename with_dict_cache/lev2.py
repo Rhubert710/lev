@@ -62,7 +62,7 @@ def levenshtein_distance(string_1, string_2):
     return moves
 
 
-with open('/Users/rh/Desktop/Py/xda-api/wordlist.csv', 'r') as f:
+with open('with_dict_cache/wordlist.csv', 'r') as f:
     doc = reader(f)
     for row in doc:
         print(levenshtein_distance(row[0], row[1]))
